@@ -158,10 +158,6 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
-    <Content Include="App_Data\wingtiptoys.mdf" />
-    <Content Include="App_Data\wingtiptoys_log.ldf">
-      <DependentUpon>wingtiptoys.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Catalog\Images\boatbig.png" />
     <Content Include="Catalog\Images\boatpaper.png" />
