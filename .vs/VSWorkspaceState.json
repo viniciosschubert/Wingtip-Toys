@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WingtipToys"
   ],
-  "SelectedNode": "\\WingtipToys.sln",
+  "SelectedNode": "\\WingtipToys\\Global.asax.cs",
   "PreviewInSolutionExplorer": false
 }
