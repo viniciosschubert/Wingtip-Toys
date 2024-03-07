@@ -1,0 +1,26 @@
+version: '3.8'
+
+networks:
+  default:
+    name: POC_MONO-network
+    external: false
+
+services:
+  wingtip-toys:
+    container_name: wingtip-toys
+    image: poc-mono
+    ports:
+      - "32772:8080"
+    depends_on:
+      - wingtip-toys-database
+    restart: unless-stopped
+    
+  wingtip-toys-database:
+    container_name: wtoys-mssql
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=SecretSquirel!
+    ports:
+      - "1433:1433"    
+    restart: unless-stopped
